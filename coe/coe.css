@@ -1,10 +1,15 @@
 /* NSSF Uganda Center of Excellence — reading & quiz styling
    Uses the site's NSSF palette: primary blue #145fa7, navy #0f1e45, green #8ec63e */
 
-/* Flat single-level nav dropdown: every category is one click away, no nested hover-through */
+/* Sections dropdown now nests a second-level course flyout (see style.css
+   #mainnav ul.submenu ul.submenu), which escapes this panel via
+   position:absolute; left:100%. overflow-y:auto here used to clip that
+   flyout on every /coe/ page (it never clipped on the homepage only
+   because coe.css isn't loaded there) -- keep overflow visible so the
+   course flyout can actually show. */
 .coe-flat-menu {
 	max-height: 480px;
-	overflow-y: auto;
+	overflow: visible;
 	min-width: 300px;
 }
 .coe-flat-menu li.coe-menu-divider {
