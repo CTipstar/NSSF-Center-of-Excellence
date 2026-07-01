@@ -186,6 +186,8 @@ section.coe-page.flat-row {
 .coe-quiz-questions[hidden] { display: none; }
 .coe-quiz-questions { margin-top: 24px; }
 .coe-course-content[hidden] { display: none; }
+.coe-quiz-wrap[hidden] { display: none; }
+.coe-resources-wrap[hidden] { display: none; }
 
 /* Reading-content pagination (injected by coe-reading.js). Reuses the
    quiz's progress-bar and nav-button styling for visual consistency. */

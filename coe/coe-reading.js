@@ -8,12 +8,19 @@
 //    quiz's one-question-at-a-time pattern, with a progress bar and
 //    Previous/Next controls. The progress bar only appears once the
 //    reader has moved past the intro page into the subtopics themselves.
-//  - "References & Further Learning" only appears once the reader has
-//    paged through to the final subtopic.
-//  - This runs independently of coe-quiz.js: when "Take Test" hides the
-//    whole .coe-course-content block, whatever page was showing stays
-//    as-is underneath; when the reader returns via "Revise Course", they
-//    land back on that same page.
+//  - "Knowledge Check: [Topic]" and "References & Further Learning" both
+//    only appear once the reader reaches the final subtopic, stacked in
+//    that order (Knowledge Check above References) below it.
+//  - .coe-quiz-wrap has to stay a sibling of .coe-course-content (not
+//    nested inside it), because coe-quiz.js hides the whole course-content
+//    block when a test starts -- nesting the quiz inside it would hide the
+//    quiz questions too. So .coe-resources-wrap is relocated at setup time
+//    to sit right after .coe-quiz-wrap, giving the visual order
+//    Knowledge Check -> References without breaking that mechanic.
+//  - References is explicitly re-hidden the moment "Take Test" is
+//    clicked (mirroring how the reading content itself disappears during
+//    the test) and restored on "Revise Course" / abandon, if the reader
+//    is still on the final subtopic.
 //  - "Take Test" stays visible the whole time but is disabled (greyed out)
 //    until the reader has paged through to the final subtopic, at which
 //    point it unlocks and stays unlocked even if they page back to review
@@ -29,6 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var article = content.closest('article') || content.parentElement;
     var startBtn = article ? article.querySelector('.coe-quiz-start') : null;
+    var quizWrap = article ? article.querySelector('.coe-quiz-wrap') : null;
+    var reviseBtn = article ? article.querySelector('.coe-quiz-revise') : null;
+    var abandonBtn = article ? article.querySelector('.coe-quiz-abandon') : null;
 
     if (total < 2) {
       return;
@@ -43,6 +53,13 @@ document.addEventListener('DOMContentLoaded', function () {
     Array.prototype.forEach.call(content.children, function (el) {
       if (el.classList && el.classList.contains('coe-resources-wrap')) { resourcesWrap = el; }
     });
+
+    // Move References out from inside course-content to sit right after
+    // the quiz block, so it renders visually below "Knowledge Check"
+    // instead of above it.
+    if (resourcesWrap && quizWrap) {
+      quizWrap.parentNode.insertBefore(resourcesWrap, quizWrap.nextSibling);
+    }
 
     // Everything before the first subtopic (tier badge, hero image, lede
     // paragraph) — captured now, before progressWrap is inserted below,
@@ -77,11 +94,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var nextBtn = navWrap.querySelector('.coe-reading-next');
 
     // Page 0 = intro alone. Pages 1..total = sections[0..total-1].
+    // Reaching page "total" (the final subtopic) also reveals Knowledge
+    // Check and References beneath it.
     var lastPage = total;
     var current = 0;
 
     function show(idx) {
       var onIntro = (idx === 0);
+      var onLastPage = (idx === lastPage);
 
       introEls.forEach(function (el) {
         el.style.display = onIntro ? '' : 'none';
@@ -90,6 +110,9 @@ document.addEventListener('DOMContentLoaded', function () {
         s.style.display = (idx === i + 1) ? '' : 'none';
       });
 
+      if (quizWrap) { quizWrap.hidden = !onLastPage; }
+      if (resourcesWrap) { resourcesWrap.hidden = !onLastPage; }
+
       progressWrap.style.display = onIntro ? 'none' : '';
       if (!onIntro) {
         progressCurrent.textContent = String(idx);
@@ -97,9 +120,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       prevBtn.style.display = onIntro ? 'none' : '';
-      nextBtn.style.display = (idx === lastPage) ? 'none' : '';
-      if (resourcesWrap) { resourcesWrap.hidden = (idx !== lastPage); }
-      if (startBtn && idx === lastPage) {
+      nextBtn.style.display = onLastPage ? 'none' : '';
+      if (startBtn && onLastPage) {
         startBtn.disabled = false;
         startBtn.classList.remove('coe-quiz-start-locked');
       }
@@ -115,6 +137,21 @@ document.addEventListener('DOMContentLoaded', function () {
       if (current > 0) { show(current - 1); }
       content.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+
+    // References hides the moment a test starts (same idea as the reading
+    // content disappearing), and comes back once the reader returns via
+    // Revise Course / abandon, as long as they're still on the final page.
+    if (startBtn) {
+      startBtn.addEventListener('click', function () {
+        if (resourcesWrap) { resourcesWrap.hidden = true; }
+      });
+    }
+
+    function restoreReferencesIfOnLastPage() {
+      if (resourcesWrap) { resourcesWrap.hidden = (current !== lastPage); }
+    }
+    if (reviseBtn) { reviseBtn.addEventListener('click', restoreReferencesIfOnLastPage); }
+    if (abandonBtn) { abandonBtn.addEventListener('click', restoreReferencesIfOnLastPage); }
 
     show(0);
   });
