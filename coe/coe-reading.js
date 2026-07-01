@@ -25,6 +25,11 @@
 //    until the reader has paged through to the final subtopic, at which
 //    point it unlocks and stays unlocked even if they page back to review
 //    something.
+//  - Video subtopics: navigating away (Previous/Next) or starting the test
+//    stops any playing video immediately, by reloading its iframe -- there
+//    is no player API to hook into reliably, but a reload always halts
+//    playback. It will not resume on its own; the reader has to press play
+//    again themselves.
 document.addEventListener('DOMContentLoaded', function () {
   var contents = document.querySelectorAll('.coe-course-content');
 
@@ -99,9 +104,23 @@ document.addEventListener('DOMContentLoaded', function () {
     var lastPage = total;
     var current = 0;
 
+    function stopVideoOnPage(idx) {
+      if (idx < 1 || idx > total) { return; }
+      var sectionEl = sections[idx - 1];
+      var iframe = sectionEl.querySelector('.coe-video-embed iframe');
+      if (iframe) {
+        // Reassigning the same src forces the browser to reload the
+        // iframe, which halts whatever was playing. The player does not
+        // autoplay on load, so it simply sits idle until pressed play again.
+        iframe.src = iframe.src;
+      }
+    }
+
     function show(idx) {
       var onIntro = (idx === 0);
       var onLastPage = (idx === lastPage);
+
+      if (current !== idx) { stopVideoOnPage(current); }
 
       introEls.forEach(function (el) {
         el.style.display = onIntro ? '' : 'none';
@@ -144,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (startBtn) {
       startBtn.addEventListener('click', function () {
         if (resourcesWrap) { resourcesWrap.hidden = true; }
+        stopVideoOnPage(current);
       });
     }
 
