@@ -404,7 +404,7 @@ h4 { font-size: 14px; line-height: 18px; }
 ---------------------------------------------------------------*/
 .top {
 	background-color: #0f1e45;
-	padding: 18px 0px 16px 0px;
+	padding: 11px 0px 10px 0px;
 }
 
 .top .wrap-flat {
@@ -591,7 +591,7 @@ h4 { font-size: 14px; line-height: 18px; }
 		float: none;
 		order: 1;
 		flex-shrink: 0;
-		margin: 15px 40px 15px 1px;
+		margin: 9px 40px 9px 1px;
 	}
 	.header .wrap-nav {
 		float: none;
@@ -833,7 +833,7 @@ h4 { font-size: 14px; line-height: 18px; }
 .flat-search ul li a {
     font-size: 26px;
     display: block;
-    margin: 68px 0px 63px 0px;
+    margin: 41px 0px 38px 0px;
 }
 
 /* Top -search
@@ -1060,13 +1060,13 @@ h4 { font-size: 14px; line-height: 18px; }
     font-weight: 500;
     color: #0f1e45;
     display: inline-block;
-    padding: 68px 33px 67px 33px;
+    padding: 41px 33px 40px 33px;
 }
 
 #mainnav > ul > li > a::after {
 	position: absolute;
 	right: 15px;
-	top: 67px;
+	top: 40px;
 	content: "\f107";
 	font-family: 'FontAwesome';
 	color: #0f1e45;
@@ -1272,7 +1272,7 @@ h4 { font-size: 14px; line-height: 18px; }
 .wrap-slider {
     background: linear-gradient(135deg, #0f1e45 0%, #145fa7 100%);
     background-size: cover;
-    height: 300px;
+    height: 180px;
     position: relative;
 }
 

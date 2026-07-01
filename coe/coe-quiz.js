@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var resultWrap = wrap.querySelector('.coe-quiz-result-wrap');
     var resultEl = wrap.querySelector('.coe-quiz-result');
     var reviseBtn = wrap.querySelector('.coe-quiz-revise');
+    var abandonBtn = wrap.querySelector('.coe-quiz-abandon');
 
     var current = 0;
 
@@ -136,17 +137,26 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
+    function backToReading() {
+      if (resultWrap) { resultWrap.hidden = true; }
+      questionsWrap.hidden = true;
+      if (courseContent) { courseContent.hidden = false; }
+      startBtn.style.display = '';
+      if (introEl) { introEl.style.display = ''; }
+      resetQuiz();
+      var scrollTarget = courseContent || wrap;
+      scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     if (reviseBtn) {
-      reviseBtn.addEventListener('click', function () {
-        if (resultWrap) { resultWrap.hidden = true; }
-        questionsWrap.hidden = true;
-        if (courseContent) { courseContent.hidden = false; }
-        startBtn.style.display = '';
-        if (introEl) { introEl.style.display = ''; }
-        resetQuiz();
-        var scrollTarget = courseContent || wrap;
-        scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+      reviseBtn.addEventListener('click', backToReading);
+    }
+
+    // Visible for the entire duration of question-answering (not just after
+    // submission). Clicking it at any point discards the in-progress
+    // attempt — no score is shown — and returns to the reading content.
+    if (abandonBtn) {
+      abandonBtn.addEventListener('click', backToReading);
     }
   });
 });

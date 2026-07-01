@@ -215,6 +215,9 @@
     font-size: 14px;
 }
 .coe-quiz-nav .btn-outline:hover { background: #f0f4f8; }
+.coe-quiz-nav .coe-quiz-abandon {
+    margin-right: 10px;
+}
 .coe-quiz-nav .btn-check {
     background: #145fa7;
     color: #fff;

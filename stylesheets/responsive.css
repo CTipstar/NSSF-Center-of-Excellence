@@ -8,7 +8,7 @@
 /* Smaller than standard 1200 */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	#mainnav > ul > li > a {
-		padding: 68px 25px;
+		padding: 41px 25px;
 	}
 
 	#mainnav > ul > li > a::after {
