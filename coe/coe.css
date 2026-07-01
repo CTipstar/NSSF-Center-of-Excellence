@@ -12,6 +12,14 @@
 	overflow: visible;
 	min-width: 300px;
 }
+
+/* The "CENTER OF EXCELLENCE" sidebar box was rendering plain white (#fff)
+   against the page's off-white/cream section backdrop (#f5f8fa), so it
+   stood out as a brighter tile rather than sitting flush with the page.
+   Match it to the same backdrop tone. */
+.sidebar.coe-sidebar {
+	background-color: #f5f8fa !important;
+}
 .coe-flat-menu li.coe-menu-divider {
 	padding: 8px 20px 4px;
 	font-family: 'Roboto Condensed', sans-serif;
