@@ -1418,6 +1418,28 @@ article.entry:last-of-type {
     color: #495057;
 }
 
+/* Featured Categories cards: make the whole card (image + title + stats)
+   tappable, not just the thumbnail image or the title text. Important for
+   mobile visitors, who otherwise have to hit a small link target. The
+   overlay link sits behind the real image/title links (which keep their
+   own hover states) but in front of everything else in the card. */
+.coe-clickable-card {
+	position: relative;
+	cursor: pointer;
+}
+
+.coe-clickable-card .coe-card-overlay-link {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+
+.coe-clickable-card .featured-post a,
+.coe-clickable-card .entry-title a {
+	position: relative;
+	z-index: 2;
+}
+
 .entry .entry-post .entry-author span a:hover {
     color: #145fa7;
 }
