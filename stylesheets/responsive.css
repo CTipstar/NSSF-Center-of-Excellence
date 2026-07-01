@@ -903,6 +903,21 @@
 		white-space: normal !important;
 	}
 
+	/* Title layer: the slide-4 title ("INVESTING IN OUR PEOPLE") is long
+	   enough to overflow a phone screen, but forcing white-space:normal via
+	   Revolution Slider's own per-breakpoint data-width/data-whitespace
+	   attributes made every breakpoint wrap (RS's "none" width does not
+	   behave like true auto-sizing once wrapping is turned on -- it wraps
+	   at whatever space happens to be available, which broke the other,
+	   already-short titles on desktop/tablet too). A plain CSS override
+	   scoped to this one media query avoids that: it only wraps titles when
+	   the viewport is actually phone-narrow, and leaves every larger
+	   breakpoint exactly as Revolution Slider renders it. */
+	.slider_styles .tp-caption.title-slide {
+		max-width: 88vw !important;
+		white-space: normal !important;
+	}
+
     .wrap-times {
 	    margin-bottom: 30px;
 	}
