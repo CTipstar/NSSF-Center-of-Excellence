@@ -1169,6 +1169,34 @@ h4 { font-size: 14px; line-height: 18px; }
     top: 0;
 }
 
+/* SECTIONS nav: two-level flyout. The "Sections" dropdown lists the three
+   renamed tiers (Strategy & Innovation / Fund & Governance / Professional
+   Development); hovering one of those must open a further flyout listing
+   its individual courses. Explicit, high-specificity rules here (rather
+   than relying only on the generic ul.submenu li ul fallback above) make
+   sure this second level of depth actually opens and stays clickable. */
+#mainnav ul.submenu ul.submenu {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 260px;
+	z-index: 10000;
+}
+
+#mainnav ul.submenu > li:hover > ul.submenu {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/* On narrower desktop widths a rightward flyout can run off the edge of the
+   screen -- open it to the left of the parent item instead. */
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+	#mainnav ul.submenu ul.submenu {
+		left: auto;
+		right: 100%;
+	}
+}
+
 /* Submenu-Style2 */
 #mainnav ul.submenu.submenu-style2 {
 	width: 1170px;

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Data Protection & Information Security | NSSF Uganda Center of Excellence</title>
+    <meta name="description" content="Safeguarding member data and practicing everyday information security under Uganda&#x27;s data protection law.">
+    <meta name="author" content="NSSF Uganda">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/animate.css">
+    <link rel="stylesheet" type="text/css" href="coe.css">
+    <link href="../images/casper.png" rel="shortcut icon">
+    <!--[if lt IE 9]>
+        <script src="../javascript/html5shiv.js"></script>
+        <script src="../javascript/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>
+    <div class="boxed">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="flat-information">
+                            <li><a href="mailto:strategy@nssfug.org">strategy@nssfug.org</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wrap-flat">
+                            <ul class="flat-login-register">
+                                <li><a href="https://www.nssfug.org">NSSF Uganda Site</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header" class="header clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="logo">
+                            <a href="../index.html"><span class="nssf-text-logo"><img src="../images/logo.png" alt="NSSF Uganda" class="nssf-logo-img"><br><em>Center of Excellence</em></span></a>
+                        </div>
+                        <div class="flat-search">
+                            <ul>
+                                <li class="show-search"><a href="#"><i class="lnr lnr-magnifier"></i></a></li>
+                            </ul>
+                            <div class="btn-menu">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="wrap-nav">
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu"><li class="no-caret"><a href="../index.html" title="Home" class="coe-nav-icon"><i class="fa fa-home"></i><span class="sr-only">Home</span></a></li>
+                                    <li class="no-caret"><a href="index.html" title="">ALL</a></li>
+                                    <li><a href="index.html" title="">SECTIONS</a>
+                                        <ul class="submenu coe-flat-menu">
+                                            <li><a href="index.html" title="">Strategy &amp; Innovation</a>
+                                                <ul class="submenu">
+                                            <li><a href="strategic-management.html">Strategic Management</a></li>
+<li><a href="performance-management.html">Performance Management</a></li>
+<li><a href="carbon-credits.html">Carbon Credits &amp; Climate Finance</a></li>
+<li><a href="innovation-entrepreneurship.html">Innovation &amp; Entrepreneurship</a></li>
+                                        </ul>
+                                            </li>
+                                            <li><a href="index.html" title="">Fund &amp; Governance</a>
+                                                <ul class="submenu">
+                                            <li><a href="investment-pension-management.html">Investment &amp; Pension Fund Management</a></li>
+<li><a href="risk-management.html">Risk Management</a></li>
+<li><a href="regulatory-compliance.html">Regulatory &amp; Compliance</a></li>
+<li><a href="corporate-governance-ethics.html">Corporate Governance &amp; Ethics</a></li>
+                                        </ul>
+                                            </li>
+                                            <li><a href="index.html" title="">Professional Development</a>
+                                                <ul class="submenu">
+                                            <li><a href="financial-literacy.html">Financial Literacy &amp; Personal Finance</a></li>
+<li><a href="member-service-excellence.html">Customer &amp; Member Service Excellence</a></li>
+<li><a href="hr-practices.html">Human Resource Practices</a></li>
+<li><a href="sustainability-esg.html">Sustainability &amp; ESG</a></li>
+<li><a href="leadership-development.html">Leadership &amp; People Development</a></li>
+<li><a href="project-management.html">Project Management</a></li>
+<li><a href="communication-stakeholder-engagement.html">Communication &amp; Stakeholder Engagement</a></li>
+<li><a href="occupational-health-safety.html">Occupational Health &amp; Safety</a></li>
+<li><a href="data-protection-security.html">Data Protection &amp; Information Security</a></li>
+                                        </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index.html" title="">GEN</a>
+                                        <ul class="submenu coe-flat-menu">
+                                            <li><a href="business.html">Business</a></li>
+<li><a href="management.html">Management</a></li>
+<li><a href="life-sciences.html">Life Sciences</a></li>
+<li><a href="medicine.html">Medicine</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="humanities.html">Humanities</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="no-caret"><a href="https://hi-innovator.ug/academy" title="" target="_blank" rel="noopener noreferrer">HI-INNOVATOR ACADEMY</a></li>
+                                    <li class="no-caret"><a href="../contact.html" title="">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-slider">
+            <div class="container page-container">
+            <div class="page-content">
+                <div class="page-title">
+                    <h1>DATA PROTECTION & INFORMATION SECURITY</h1>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="index.html">Center of Excellence</a></li>
+                            <li>Data Protection &amp; Information Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <section class="flat-row pd-blog bg-theme blog-details coe-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <article class="entry coe-article">
+                            <div class="coe-course-content">
+<div class="coe-tier-badge">Tier 3</div>
+                            <figure class="coe-topic-hero">
+                                <img src="../images/coe/data-protection-security.jpg" alt="Data Protection &amp; Information Security learning banner">
+                            </figure>
+                            <p class="coe-lede">An institution holding decades of personal and financial data for millions of members carries a correspondingly serious data protection responsibility - one grounded in Uganda&#x27;s own legal framework as well as everyday operational practice.</p>
+                            <div class="coe-section">
+<h3 class="coe-section-title">1. Why Data Protection Matters for a Member-Data Institution</h3>
+<p>Uganda's Data Protection and Privacy Act, 2019, establishes legal obligations for organizations that collect and process personal data, including principles such as collecting data only for specified, lawful purposes, keeping it accurate and secure, and not retaining it longer than necessary. An institution holding member records - including sensitive personal data such as identification details, employment history, and financial contributions - sits squarely within the scope of these obligations.</p>
+<p>'Sensitive personal data' typically receives additional protection under data protection law because its exposure carries a higher risk of harm to the individual - financial account details and health-related information (relevant, for instance, to invalidity benefit assessments) are common categories treated with heightened care.</p>
+<p>Data protection is not solely a legal or IT department concern. Every staff member who accesses, handles, or discusses member information in the course of their work is a practical participant in the institution's data protection obligations, whether or not their job title mentions data or security explicitly.</p>
+</div>
+<div class="coe-section">
+<h3 class="coe-section-title">2. Everyday Information Security Practices</h3>
+<p>Password hygiene - using strong, unique passwords for different systems and not sharing credentials, even with trusted colleagues - remains one of the most basic and most frequently neglected information security practices, precisely because password-related failures feel too mundane to seem like a real risk until they cause an actual breach.</p>
+<p>Phishing - fraudulent messages designed to trick a recipient into revealing credentials, transferring funds, or installing malicious software, often by impersonating a trusted source such as a colleague, bank, or well-known service - remains one of the most common entry points for security incidents at organizations of all sizes, because it targets human judgment rather than technical vulnerabilities, and it continues to evolve in sophistication.</p>
+<p>The 'need-to-know' principle - limiting access to sensitive information to only those who require it for their specific role - reduces the potential impact of any single compromised account or insider mistake, since broad, unrestricted access to sensitive data multiplies the potential damage from any one point of failure.</p>
+<figure class="coe-diagram">
+    <img src="../images/coe/diagrams/need-to-know-access.svg" alt="Need-to-know access model with progressively restricted access">
+</figure>
+</div>
+<div class="coe-section">
+<h3 class="coe-section-title">3. Responding to Incidents and Staying Compliant</h3>
+<p>Prompt internal reporting of a suspected data incident - even one that seems minor or uncertain - is critical, because early reporting narrows the window in which harm can occur and gives the institution the best chance of containing and correcting a problem before it affects a large number of members. Delayed reporting, by contrast, often turns a manageable incident into a significantly larger one.</p>
+<p>Data minimization - collecting and retaining only the personal data actually needed for a defined purpose, rather than accumulating data 'just in case' it might be useful later - is both a legal principle under data protection law and a practical risk-reduction measure, since data that was never collected or was properly deleted cannot subsequently be breached.</p>
+<p>Staying compliant with data protection obligations, similar to the broader regulatory compliance principle covered in its own category, requires an ongoing process rather than a one-time setup: regularly reviewing what data is held and why, keeping security practices current as threats evolve, and ensuring that all staff - not only technical specialists - understand their part in protecting the member information the institution is trusted with.</p>
+</div>
+</div>
+                            <div class="coe-quiz-wrap">
+                                <h3 class="coe-section-title">Knowledge Check: Data Protection &amp; Information Security</h3>
+                                <p class="coe-quiz-intro">10 questions. Finish the reading above, then take the test to check your understanding.</p>
+                                <button type="button" class="coe-quiz-start btn-check">TAKE TEST</button>
+<div class="coe-quiz-questions" hidden>
+<div class="coe-quiz-progress-wrap">
+<div class="coe-quiz-progress-label">Question <span class="coe-quiz-progress-current">1</span> of <span class="coe-quiz-progress-total"></span></div>
+<div class="coe-quiz-progress-bar"><div class="coe-quiz-progress-fill"></div></div>
+</div>
+<form id="quiz-data-protection-security" class="coe-quiz-form" data-quiz="data-protection-security">
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">1. What does Uganda&#x27;s Data Protection and Privacy Act, 2019, establish?</p>
+<label class="coe-quiz-option"><input type="radio" name="q1-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> Voluntary guidelines with no legal force</label>
+<label class="coe-quiz-option"><input type="radio" name="q1-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> Legal obligations for organizations that collect and process personal data, including purpose limitation, accuracy, and security requirements</label>
+<label class="coe-quiz-option"><input type="radio" name="q1-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> Rules that apply only to government ministries</label>
+<label class="coe-quiz-option"><input type="radio" name="q1-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> A framework relevant only to international companies operating in Uganda</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">2. Why does &#x27;sensitive personal data&#x27; typically receive additional protection?</p>
+<label class="coe-quiz-option"><input type="radio" name="q2-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> It doesn&#x27;t - all personal data is treated identically under the law</label>
+<label class="coe-quiz-option"><input type="radio" name="q2-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> Its exposure carries a higher risk of harm to the individual, such as with financial or health-related information</label>
+<label class="coe-quiz-option"><input type="radio" name="q2-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> Sensitive data is easier to secure than other data</label>
+<label class="coe-quiz-option"><input type="radio" name="q2-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> Only foreign nationals&#x27; data is considered sensitive</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">3. Is data protection solely a legal or IT department responsibility?</p>
+<label class="coe-quiz-option"><input type="radio" name="q3-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> Yes, entirely</label>
+<label class="coe-quiz-option"><input type="radio" name="q3-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> No - every staff member who accesses, handles, or discusses member information is a practical participant in data protection obligations</label>
+<label class="coe-quiz-option"><input type="radio" name="q3-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> Only senior management bears any responsibility</label>
+<label class="coe-quiz-option"><input type="radio" name="q3-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> Data protection responsibility only applies during system implementation</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">4. Why does password hygiene remain a commonly neglected security practice?</p>
+<label class="coe-quiz-option"><input type="radio" name="q4-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> Because it is technically impossible to implement</label>
+<label class="coe-quiz-option"><input type="radio" name="q4-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> Because password-related failures feel too mundane to seem like a real risk until they cause an actual breach</label>
+<label class="coe-quiz-option"><input type="radio" name="q4-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> Because strong passwords are no longer considered useful</label>
+<label class="coe-quiz-option"><input type="radio" name="q4-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> Because most systems no longer require passwords</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">5. What is phishing?</p>
+<label class="coe-quiz-option"><input type="radio" name="q5-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> A technical vulnerability in server hardware</label>
+<label class="coe-quiz-option"><input type="radio" name="q5-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> Fraudulent messages designed to trick a recipient into revealing credentials or taking harmful action, often by impersonating a trusted source</label>
+<label class="coe-quiz-option"><input type="radio" name="q5-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> A method for legitimately verifying customer identity</label>
+<label class="coe-quiz-option"><input type="radio" name="q5-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> An outdated threat no longer relevant today</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">6. Why does phishing remain a common entry point for security incidents?</p>
+<label class="coe-quiz-option"><input type="radio" name="q6-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> It targets technical vulnerabilities exclusively</label>
+<label class="coe-quiz-option"><input type="radio" name="q6-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> It targets human judgment rather than technical vulnerabilities, and continues to evolve in sophistication</label>
+<label class="coe-quiz-option"><input type="radio" name="q6-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> It is no longer used by attackers</label>
+<label class="coe-quiz-option"><input type="radio" name="q6-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> It only affects personal, not organizational, accounts</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">7. What does the &#x27;need-to-know&#x27; principle limit?</p>
+<label class="coe-quiz-option"><input type="radio" name="q7-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> The number of employees an organization can hire</label>
+<label class="coe-quiz-option"><input type="radio" name="q7-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> Access to sensitive information to only those who require it for their specific role</label>
+<label class="coe-quiz-option"><input type="radio" name="q7-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> The number of passwords an individual can have</label>
+<label class="coe-quiz-option"><input type="radio" name="q7-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> The physical size of an office building</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">8. Why is prompt internal reporting of a suspected data incident important?</p>
+<label class="coe-quiz-option"><input type="radio" name="q8-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> It has no real effect on outcomes</label>
+<label class="coe-quiz-option"><input type="radio" name="q8-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> It narrows the window in which harm can occur and improves the chance of containing a problem before it affects many members</label>
+<label class="coe-quiz-option"><input type="radio" name="q8-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> Reporting should be delayed until the incident is fully confirmed</label>
+<label class="coe-quiz-option"><input type="radio" name="q8-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> Only IT staff are permitted to report incidents</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">9. What is &#x27;data minimization&#x27;?</p>
+<label class="coe-quiz-option"><input type="radio" name="q9-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> Collecting as much data as possible in case it becomes useful later</label>
+<label class="coe-quiz-option"><input type="radio" name="q9-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> Collecting and retaining only the personal data actually needed for a defined purpose</label>
+<label class="coe-quiz-option"><input type="radio" name="q9-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> A technical process for compressing file sizes</label>
+<label class="coe-quiz-option"><input type="radio" name="q9-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> A rule that applies only to paper records</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-q" data-correct="B">
+<p class="coe-quiz-question">10. What does staying compliant with data protection obligations require?</p>
+<label class="coe-quiz-option"><input type="radio" name="q10-data-protection-security" value="A"> <span class="coe-quiz-letter">A.</span> A one-time setup process with no further action needed</label>
+<label class="coe-quiz-option"><input type="radio" name="q10-data-protection-security" value="B"> <span class="coe-quiz-letter">B.</span> An ongoing process of reviewing data holdings, updating security practices, and ensuring all staff understand their role</label>
+<label class="coe-quiz-option"><input type="radio" name="q10-data-protection-security" value="C"> <span class="coe-quiz-letter">C.</span> Action only from the IT security team, with no involvement from other staff</label>
+<label class="coe-quiz-option"><input type="radio" name="q10-data-protection-security" value="D"> <span class="coe-quiz-letter">D.</span> Compliance only becomes relevant after a breach has occurred</label>
+<div class="coe-quiz-feedback"></div>
+</div>
+<div class="coe-quiz-nav">
+<button type="button" class="coe-quiz-prev btn-outline">Previous</button>
+<button type="button" class="coe-quiz-next btn-check">Next</button>
+<button type="button" class="coe-quiz-submit btn-check">Check My Answers</button>
+</div>
+</form>
+</div>
+<div class="coe-quiz-result-wrap" hidden>
+<div class="coe-quiz-result"></div>
+<button type="button" class="coe-quiz-revise btn-check">REVISE COURSE</button>
+</div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sidebar coe-sidebar">
+                            <div class="widget widget-categories">
+                                <h3 class="widget-title">CENTER OF EXCELLENCE</h3>
+                                <ul><li><a href="strategic-management.html">Strategic Management</a></li>
+<li><a href="performance-management.html">Performance Management</a></li>
+<li><a href="carbon-credits.html">Carbon Credits &amp; Climate Finance</a></li>
+<li><a href="innovation-entrepreneurship.html">Innovation &amp; Entrepreneurship</a></li>
+<li><a href="investment-pension-management.html">Investment &amp; Pension Fund Management</a></li>
+<li><a href="risk-management.html">Risk Management</a></li>
+<li><a href="regulatory-compliance.html">Regulatory &amp; Compliance</a></li>
+<li><a href="corporate-governance-ethics.html">Corporate Governance &amp; Ethics</a></li>
+<li><a href="financial-literacy.html">Financial Literacy &amp; Personal Finance</a></li>
+<li><a href="member-service-excellence.html">Customer &amp; Member Service Excellence</a></li>
+<li><a href="hr-practices.html">Human Resource Practices</a></li>
+<li><a href="sustainability-esg.html">Sustainability &amp; ESG</a></li>
+<li><a href="leadership-development.html">Leadership &amp; People Development</a></li>
+<li><a href="project-management.html">Project Management</a></li>
+<li><a href="communication-stakeholder-engagement.html">Communication &amp; Stakeholder Engagement</a></li>
+<li><a href="occupational-health-safety.html">Occupational Health &amp; Safety</a></li>
+<li><a href="data-protection-security.html">Data Protection &amp; Information Security</a></li>
+<li><a href="business.html">Business</a></li>
+<li><a href="management.html">Management</a></li>
+<li><a href="life-sciences.html">Life Sciences</a></li>
+<li><a href="medicine.html">Medicine</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="humanities.html">Humanities</a></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer-information">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 info-left">
+                            <div class="logo-footer">
+                                <a href="../index.html"><span class="nssf-text-logo nssf-text-logo-footer"><img src="../images/logo.png" alt="NSSF Uganda" class="nssf-logo-img"><br><em>Center of Excellence</em></span></a>
+                            </div>
+                            <ul class="flat-socials">
+                                <li><a href="https://www.facebook.com/nssfug/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/nssfug"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://ug.linkedin.com/company/national-social-security-fund"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCiqC3isk3yqDFFalkQyaDSQ"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6 info-right">
+                            <ul class="flat-information">
+                                <li><a href="tel:0800286773"> 0800 286 773 (Toll Free)</a></li>
+                                <li><a href="mailto:strategy@nssfug.org">strategy@nssfug.org</a></li>
+                                <li><a href="#"> Plot 1 Pilkington Road, Workers House, Kampala</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget-our-services">
+                                <h3 class="widget-title">CENTER OF EXCELLENCE</h3>
+                                <ul>
+                                    <li><a href="index.html">All Categories</a></li>
+                                    <li><a href="../index.html">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget-our-services">
+                                <h3 class="widget-title">ABOUT NSSF</h3>
+                                <ul>
+                                    <li><a href="https://www.nssfug.org">nssfug.org</a></li>
+                                    <li><a href="https://www.nssfug.org/about-us/mission/">Mandate &amp; Vision</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget widget-our-services">
+                                <h3 class="widget-title">SUPPORT</h3>
+                                <ul>
+                                    <li><a href="../contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="bottom">
+            <div class="container">
+                <div class="copyright">
+                    <p>© NSSF Uganda. All rights reserved. | <a href="https://www.nssfug.org">www.nssfug.org</a></p>
+                </div>
+            </div>
+        </div>
+        <a class="go-top show"></a>
+    </div>
+    <script type="text/javascript" src="../javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script type="text/javascript" src="coe-quiz.js"></script>
+</body>
+</html>
