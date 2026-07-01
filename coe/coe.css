@@ -80,6 +80,8 @@
     letter-spacing: 0;
     text-transform: uppercase;
     padding: 12px 30px;
+    height: auto;
+    line-height: normal;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
@@ -132,6 +134,8 @@
     letter-spacing: 0;
     text-transform: uppercase;
     padding: 11px 26px;
+    height: auto;
+    line-height: normal;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
@@ -147,6 +151,8 @@
     letter-spacing: 0;
     text-transform: uppercase;
     padding: 12px 30px;
+    height: auto;
+    line-height: normal;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
@@ -169,6 +175,8 @@
     letter-spacing: 0;
     text-transform: uppercase;
     padding: 12px 30px;
+    height: auto;
+    line-height: normal;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
@@ -218,6 +226,8 @@
     letter-spacing: 0;
     text-transform: uppercase;
     padding: 12px 30px;
+    height: auto;
+    line-height: normal;
     border-radius: 3px;
     cursor: pointer;
     font-size: 14px;
