@@ -312,7 +312,8 @@
     display: inline-block;
     font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.2em;
+    letter-spacing: 0;
+    text-align: center;
     border: 2px solid #145fa7;
     padding: 10px 45px 11px 45px;
     color: #0f1e45;

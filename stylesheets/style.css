@@ -240,13 +240,14 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     display: inline-block;
-    color: #fff; 
-    padding: 0 24px 0 30px;
+    color: #fff;
+    padding: 0 24px;
     height: 50px;
     line-height: 45px;
     font-size: 13px;
-    letter-spacing: 2.5px;
+    letter-spacing: 0;
     text-transform: uppercase;
+    text-align: center;
     color: #ffffff;
     background: #145fa7;
     border: 2px solid #145fa7;
@@ -575,6 +576,46 @@ h4 { font-size: 14px; line-height: 18px; }
 
 .wrap-nav {
     float: right;
+}
+
+/* Keep logo, nav, and search icon on a single row on desktop, instead of the
+   logo wrapping to its own line above the nav (the two-line NSSF logo made
+   this noticeable once the logo image was added). */
+@media only screen and (min-width: 992px) {
+	.header .col-md-12 {
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	.header .logo {
+		float: none;
+		order: 1;
+		flex-shrink: 0;
+		margin: 15px 40px 15px 1px;
+	}
+	.header .wrap-nav {
+		float: none;
+		order: 2;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+		min-width: 0;
+	}
+	.header .flat-search {
+		order: 3;
+		flex-shrink: 0;
+	}
+	/* Prevent the nav items themselves from wrapping to a second line
+	   (inline-block <li>s wrap like text unless nowrap is forced). */
+	#mainnav > ul.menu {
+		white-space: nowrap;
+	}
+	/* white-space is inherited, so undo it inside dropdown panels -- otherwise
+	   long category names (e.g. "Investment & Pension Fund Management") refuse
+	   to wrap and spill outside the panel instead of breaking onto a new line. */
+	#mainnav ul.submenu {
+		white-space: normal;
+	}
 }
 
 /* Header-style2
@@ -1042,6 +1083,27 @@ h4 { font-size: 14px; line-height: 18px; }
 	content: none;
 }
 
+/* Home nav item shown as an icon instead of text */
+#mainnav > ul > li > a.coe-nav-icon {
+	font-size: 18px;
+}
+#mainnav > ul > li > a.coe-nav-icon i {
+	vertical-align: middle;
+}
+
+/* Screen-reader-only text (visually hidden but still announced) */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
 #mainnav > ul > li > a:hover:after {
 	color:#145fa7;
 }
@@ -1180,7 +1242,7 @@ h4 { font-size: 14px; line-height: 18px; }
 /* Wrap-slider
 ----------------------------------------------------------------*/
 .wrap-slider {
-    background: url(../images/slides/1.jpg);
+    background: linear-gradient(135deg, #0f1e45 0%, #145fa7 100%);
     background-size: cover;
     height: 300px;
     position: relative;
@@ -1232,7 +1294,7 @@ h4 { font-size: 14px; line-height: 18px; }
 	position: absolute;
 	right: 0;
 	top: 0;
-	content:"~";
+	content:"-";
 	color:#fff;
 	font-size: 16px;
 }
