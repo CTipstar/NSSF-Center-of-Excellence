@@ -92,7 +92,7 @@ tpj(document).ready(function() {
             responsiveLevels:[1240,1024,778,480],
             visibilityLevels:[1240,1024,778,480],
             gridwidth:[1240,1024,778,480],
-            gridheight:[622,622,517,414], // 20% taller than [518,518,431,345] (originally [600,600,500,400])
+            gridheight:[715,715,595,476], // 15% taller than [622,622,517,414] (originally [600,600,500,400])
             lazyType:"none",
             parallax: {
                 type:"mouse",
