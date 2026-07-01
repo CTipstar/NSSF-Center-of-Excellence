@@ -36,6 +36,14 @@
 }
 
 .coe-page { padding-top: 20px; }
+/* The section's actual rendered top padding (99px) doesn't come from this
+   rule alone -- .flat-row picks up additional top padding elsewhere in the
+   cascade at this specificity, so a plain override here gets outweighed.
+   Force it down (here: ~30% less than the 99px the page was actually
+   rendering) with a higher-specificity, !important rule instead. */
+section.coe-page.flat-row {
+    padding-top: 69px !important;
+}
 .coe-tier-badge {
     display: inline-block;
     background: #eeeeee;
@@ -162,9 +170,27 @@
     margin-bottom: 4px;
 }
 .coe-quiz-start.btn-check:hover { background: #0f1e45; }
+/* Locked until the reader has paged through to the final subtopic
+   (see coe-reading.js) -- visibly greyed out and inert rather than hidden,
+   so it signals "not yet" instead of disappearing. */
+.coe-quiz-start.btn-check:disabled,
+.coe-quiz-start.btn-check.coe-quiz-start-locked {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background: #145fa7;
+}
+.coe-quiz-start.btn-check:disabled:hover,
+.coe-quiz-start.btn-check.coe-quiz-start-locked:hover {
+    background: #145fa7;
+}
 .coe-quiz-questions[hidden] { display: none; }
 .coe-quiz-questions { margin-top: 24px; }
 .coe-course-content[hidden] { display: none; }
+
+/* Reading-content pagination (injected by coe-reading.js). Reuses the
+   quiz's progress-bar and nav-button styling for visual consistency. */
+.coe-reading-progress-wrap { margin-top: 4px; }
+.coe-reading-nav { margin-top: 28px; margin-bottom: 34px; }
 
 /* Progress bar */
 .coe-quiz-progress-wrap { margin-bottom: 22px; }
