@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-labelledby="title desc">
+  <title id="title">Board, committees, and management structure</title>
+  <desc id="desc">Board oversight flows through audit, risk, and remuneration committees to management.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f8fa}.box{fill:#fff;stroke:#145fa7;stroke-width:3}.committee{fill:#eaf6df;stroke:#8ec63e;stroke-width:3}.label{font:700 20px Arial,sans-serif;fill:#0f1e45}.small{font:14px Arial,sans-serif;fill:#495057}.line{stroke:#145fa7;stroke-width:4;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect class="bg" width="700" height="360" rx="12"/>
+  <rect class="box" x="240" y="34" width="220" height="70" rx="10"/>
+  <text class="label" x="350" y="77" text-anchor="middle">Board</text>
+  <line class="line" x1="350" y1="104" x2="350" y2="138"/>
+  <line class="line" x1="156" y1="138" x2="544" y2="138"/>
+  <line class="line" x1="156" y1="138" x2="156" y2="156"/>
+  <line class="line" x1="350" y1="138" x2="350" y2="156"/>
+  <line class="line" x1="544" y1="138" x2="544" y2="156"/>
+  <rect class="committee" x="68" y="156" width="176" height="72" rx="10"/>
+  <rect class="committee" x="262" y="156" width="176" height="72" rx="10"/>
+  <rect class="committee" x="456" y="156" width="176" height="72" rx="10"/>
+  <text class="label" x="156" y="187" text-anchor="middle">Audit</text>
+  <text class="small" x="156" y="208" text-anchor="middle">committee</text>
+  <text class="label" x="350" y="187" text-anchor="middle">Risk</text>
+  <text class="small" x="350" y="208" text-anchor="middle">committee</text>
+  <text class="label" x="544" y="187" text-anchor="middle">Remuneration</text>
+  <text class="small" x="544" y="208" text-anchor="middle">committee</text>
+  <line class="line" x1="350" y1="228" x2="350" y2="262"/>
+  <rect class="box" x="240" y="262" width="220" height="70" rx="10"/>
+  <text class="label" x="350" y="305" text-anchor="middle">Management</text>
+</svg>

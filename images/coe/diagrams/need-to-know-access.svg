@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-labelledby="title desc">
+  <title id="title">Need-to-know access model</title>
+  <desc id="desc">Concentric access levels narrow from general workplace context to privileged systems.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f8fa}.ring1{fill:#e8f2fb;stroke:#145fa7;stroke-width:3}.ring2{fill:#eaf6df;stroke:#8ec63e;stroke-width:3}.ring3{fill:#fff;stroke:#0f1e45;stroke-width:3}.ring4{fill:#0f1e45}.label{font:700 18px Arial,sans-serif;fill:#0f1e45}.small{font:14px Arial,sans-serif;fill:#495057}.white{font:700 16px Arial,sans-serif;fill:#fff}.line{stroke:#145fa7;stroke-width:3;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect class="bg" width="700" height="360" rx="12"/>
+  <circle class="ring1" cx="260" cy="180" r="132"/>
+  <circle class="ring2" cx="260" cy="180" r="96"/>
+  <circle class="ring3" cx="260" cy="180" r="62"/>
+  <circle class="ring4" cx="260" cy="180" r="30"/>
+  <text class="white" x="260" y="176" text-anchor="middle">Most</text>
+  <text class="white" x="260" y="195" text-anchor="middle">restricted</text>
+  <line class="line" x1="356" y1="92" x2="440" y2="70"/>
+  <line class="line" x1="340" y1="146" x2="440" y2="140"/>
+  <line class="line" x1="323" y1="206" x2="440" y2="210"/>
+  <line class="line" x1="292" y1="264" x2="440" y2="282"/>
+  <text class="label" x="456" y="76">General context</text>
+  <text class="small" x="456" y="98">available to all staff</text>
+  <text class="label" x="456" y="146">Role-based access</text>
+  <text class="small" x="456" y="168">needed for assigned duties</text>
+  <text class="label" x="456" y="216">Sensitive member data</text>
+  <text class="small" x="456" y="238">limited to specific roles</text>
+  <text class="label" x="456" y="288">Privileged systems</text>
+  <text class="small" x="456" y="310">strict approval and monitoring</text>
+</svg>

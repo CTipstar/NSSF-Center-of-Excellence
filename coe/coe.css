@@ -1,0 +1,178 @@
+/* NSSF Uganda Center of Excellence — reading & quiz styling
+   Uses the site's NSSF palette: primary blue #145fa7, navy #0f1e45, green #8ec63e */
+
+/* Flat single-level nav dropdown: every category is one click away, no nested hover-through */
+.coe-flat-menu {
+	max-height: 480px;
+	overflow-y: auto;
+	min-width: 300px;
+}
+.coe-flat-menu li.coe-menu-divider {
+	padding: 8px 20px 4px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 1px;
+	color: #8ec63e;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+.coe-flat-menu li.coe-menu-pending a {
+	opacity: .55;
+	font-style: italic;
+}
+
+.coe-page { padding-top: 20px; }
+.coe-tier-badge {
+    display: inline-block;
+    background: #eeeeee;
+    color: #0f1e45;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+.coe-lede {
+    font-size: 18px;
+    line-height: 28px;
+    color: #495057;
+    border-left: 3px solid #145fa7;
+    padding-left: 16px;
+    margin-bottom: 30px;
+}
+.coe-section { margin-bottom: 34px; }
+.coe-section-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    color: #0f1e45;
+    font-size: 22px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #145fa7;
+    padding-bottom: 8px;
+}
+.coe-section p {
+    color: #495057;
+    line-height: 27px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+/* Quiz */
+.coe-quiz-wrap {
+    margin-top: 46px;
+    padding: 28px;
+    background: #f5f8fa;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+.coe-quiz-intro { color: #495057; margin-bottom: 20px; }
+.coe-quiz-start.btn-check {
+    background: #145fa7;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.coe-quiz-start.btn-check:hover { background: #0f1e45; }
+.coe-quiz-questions[hidden] { display: none; }
+.coe-quiz-questions { margin-top: 24px; }
+.coe-quiz-q {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    transition: border-color .2s ease;
+}
+.coe-quiz-question {
+    font-weight: 600;
+    color: #0f1e45;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.coe-quiz-option {
+    display: block;
+    font-weight: 400;
+    color: #495057;
+    padding: 6px 0;
+    cursor: pointer;
+}
+.coe-quiz-option input { margin-right: 8px; }
+.coe-quiz-letter { font-weight: 600; color: #145fa7; }
+.coe-quiz-feedback {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+}
+.coe-quiz-q.correct { border-color: #8ec63e; }
+.coe-quiz-q.correct .coe-quiz-feedback { display: block; color: #4f8a10; }
+.coe-quiz-q.incorrect { border-color: #d9534f; }
+.coe-quiz-q.incorrect .coe-quiz-feedback { display: block; color: #d9534f; }
+
+.coe-quiz-submit.btn-check {
+    background: #145fa7;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.coe-quiz-submit.btn-check:hover { background: #0f1e45; }
+.coe-quiz-result {
+    margin-top: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0f1e45;
+}
+
+/* Hub / category grid */
+.coe-hub-intro { color: #495057; font-size: 16px; line-height: 26px; margin-bottom: 30px; }
+.coe-tier-heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #0f1e45;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 34px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #8ec63e;
+}
+.coe-card-grid { display: flex; flex-wrap: wrap; margin: 0 -10px; }
+.coe-card {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    padding: 22px;
+    box-shadow: 0 1px 3px rgba(15,30,69,0.06);
+}
+.coe-card h4 { font-family: 'Roboto Condensed', sans-serif; color: #0f1e45; font-weight: 600; margin-bottom: 10px; }
+.coe-card p { color: #495057; font-size: 14px; line-height: 22px; margin-bottom: 14px; }
+.coe-card a.coe-card-link {
+    color: #145fa7;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.coe-card.coe-card-pending { opacity: .6; background: #f5f8fa; }
+@media (max-width: 991px) { .coe-card { width: calc(50% - 20px); } }
+@media (max-width: 600px) { .coe-card { width: calc(100% - 20px); } }

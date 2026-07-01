@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" role="img" aria-labelledby="title desc">
+  <title id="title">Performance management cycle</title>
+  <desc id="desc">Four linked stages: Plan, Monitor, Develop, and Review.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#145fa7"/>
+    </marker>
+    <style>
+      .bg{fill:#f5f8fa}.node{fill:#fff;stroke:#145fa7;stroke-width:3}.green{fill:#8ec63e}.label{font:700 23px Arial,sans-serif;fill:#0f1e45}.hint{font:14px Arial,sans-serif;fill:#495057}.arrow{fill:none;stroke:#145fa7;stroke-width:4;stroke-linecap:round;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="700" height="360" rx="12"/>
+  <circle cx="350" cy="180" r="62" fill="#eaf6df" stroke="#8ec63e" stroke-width="4"/>
+  <text class="hint" x="350" y="174" text-anchor="middle">Continuous</text>
+  <text class="hint" x="350" y="195" text-anchor="middle">check-ins</text>
+  <rect class="node" x="95" y="56" width="170" height="74" rx="10"/>
+  <rect class="node" x="435" y="56" width="170" height="74" rx="10"/>
+  <rect class="node" x="435" y="230" width="170" height="74" rx="10"/>
+  <rect class="node" x="95" y="230" width="170" height="74" rx="10"/>
+  <text class="label" x="180" y="101" text-anchor="middle">Plan</text>
+  <text class="label" x="520" y="101" text-anchor="middle">Monitor</text>
+  <text class="label" x="520" y="275" text-anchor="middle">Develop</text>
+  <text class="label" x="180" y="275" text-anchor="middle">Review</text>
+  <path class="arrow" d="M 272 93 C 325 64, 375 64, 428 93"/>
+  <path class="arrow" d="M 520 136 C 558 166, 558 194, 520 224"/>
+  <path class="arrow" d="M 428 267 C 375 296, 325 296, 272 267"/>
+  <path class="arrow" d="M 180 224 C 142 194, 142 166, 180 136"/>
+  <circle class="green" cx="138" cy="93" r="7"/>
+  <circle class="green" cx="478" cy="93" r="7"/>
+  <circle class="green" cx="478" cy="267" r="7"/>
+  <circle class="green" cx="138" cy="267" r="7"/>
+</svg>

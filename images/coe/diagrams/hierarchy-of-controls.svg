@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img" aria-labelledby="title desc">
+  <title id="title">Hierarchy of controls</title>
+  <desc id="desc">A five-level safety pyramid from elimination down to personal protective equipment.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f5f8fa}.label{font:700 19px Arial,sans-serif;fill:#fff}.small{font:14px Arial,sans-serif;fill:#495057}.title{font:700 22px Arial,sans-serif;fill:#0f1e45}
+    </style>
+  </defs>
+  <rect class="bg" width="700" height="420" rx="12"/>
+  <text class="title" x="350" y="45" text-anchor="middle">Hierarchy of Controls</text>
+  <text class="small" x="350" y="70" text-anchor="middle">Most effective controls reduce or remove the hazard at its source.</text>
+  <polygon points="350,92 438,150 262,150" fill="#8ec63e"/>
+  <polygon points="262,154 438,154 500,212 200,212" fill="#4da85d"/>
+  <polygon points="200,216 500,216 562,274 138,274" fill="#145fa7"/>
+  <polygon points="138,278 562,278 624,336 76,336" fill="#0f1e45"/>
+  <polygon points="76,340 624,340 660,384 40,384" fill="#7f8c8d"/>
+  <text class="label" x="350" y="134" text-anchor="middle">Elimination</text>
+  <text class="label" x="350" y="192" text-anchor="middle">Substitution</text>
+  <text class="label" x="350" y="254" text-anchor="middle">Engineering Controls</text>
+  <text class="label" x="350" y="316" text-anchor="middle">Administrative Controls</text>
+  <text class="label" x="350" y="369" text-anchor="middle">PPE</text>
+</svg>
