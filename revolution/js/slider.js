@@ -6,7 +6,15 @@ tpj(document).ready(function() {
     }else{
         revapi1078 = tpj("#rev_slider_1078_1").show().revolution({
             sliderType:"standard",
-            sliderLayout: "fullscreen",
+            // Was "fullscreen", which locks the slider to the full browser
+            // viewport height and ignores gridheight entirely -- so
+            // shrinking gridheight alone had no visible effect. Switched to
+            // "fullwidth", where gridheight (below) directly sets the
+            // rendered height per breakpoint, to make a real, predictable
+            // 25% height reduction possible. The theme's own markup/CSS
+            // (.fullwidthbanner-container class on the wrapper) was already
+            // built for this mode.
+            sliderLayout: "fullwidth",
             dottedOverlay:"none",
             delay:9000,
             navigation: {
@@ -84,7 +92,7 @@ tpj(document).ready(function() {
             responsiveLevels:[1240,1024,778,480],
             visibilityLevels:[1240,1024,778,480],
             gridwidth:[1240,1024,778,480],
-            gridheight:[600,600,500,400],
+            gridheight:[622,622,517,414], // 20% taller than [518,518,431,345] (originally [600,600,500,400])
             lazyType:"none",
             parallax: {
                 type:"mouse",

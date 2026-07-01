@@ -1473,8 +1473,11 @@
 	    margin-bottom: 10px;
 	}
 
+	/* Narrower than style.css's 480px breakpoint (26px there) -- shrink
+	   a bit further so long titles still fit without needing extra
+	   lines than necessary on the smallest phone screens. */
 	.wrap-slider .page-title h1 {
-    	font-size: 42px;
+    	font-size: 22px;
     }
 
     

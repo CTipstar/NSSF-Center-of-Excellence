@@ -1268,37 +1268,60 @@ h4 { font-size: 14px; line-height: 18px; }
 }
 
 /* Wrap-slider
-----------------------------------------------------------------*/
+----------------------------------------------------------------
+   Was a fixed height:180px with a table/table-cell vertical-centering
+   trick. On narrow phone widths, long page titles (e.g. "COMMUNICATION &
+   STAKEHOLDER ENGAGEMENT") wrap to 2-3 lines and, combined with the
+   breadcrumbs below, no longer fit inside a rigid 180px box -- the
+   vertically-centered content simply overflowed top/bottom and got
+   visually cropped by whatever sits next on the page. Switched to
+   min-height + flexbox centering instead: the box still looks identical
+   whenever content fits in 180px (the common case), but grows to fit
+   however many lines a long title needs on narrow screens, so nothing is
+   ever clipped. Font sizes also step down at narrower widths so the box
+   doesn't have to grow as dramatically. */
 .wrap-slider {
     background: linear-gradient(135deg, #0f1e45 0%, #145fa7 100%);
     background-size: cover;
-    height: 180px;
+    min-height: 180px;
     position: relative;
-}
-
-.container.page-container {
-    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .wrap-slider .page-content {
-    height: 100%;
     width: 100%;
-    display: table;
+    padding: 30px 0;
+    box-sizing: border-box;
 }
 
 .wrap-slider .page-title {
     text-align: center;
-    vertical-align: middle;
-    display: table-cell;
 }
 
 .wrap-slider .page-title h1 {
     font-size: 48px;
-    line-height: 48px;
+    line-height: 1.15;
     color: #fff;
     font-weight: 700;
     font-family: 'Roboto Condensed';
     padding-bottom: 24px;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+    .wrap-slider .page-title h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap-slider .page-title h1 {
+        font-size: 26px;
+        padding-bottom: 16px;
+    }
 }
 
 /* Breadcrumbs
@@ -1329,6 +1352,20 @@ h4 { font-size: 14px; line-height: 18px; }
 
 .breadcrumbs ul li:last-child:after {
 	content: none;
+}
+
+@media (max-width: 480px) {
+    .breadcrumbs ul {
+        padding-left: 0;
+    }
+    .breadcrumbs ul li {
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding-right: 14px;
+    }
+    .breadcrumbs ul li::after {
+        font-size: 12px;
+    }
 }
 
 .breadcrumbs ul li a {
